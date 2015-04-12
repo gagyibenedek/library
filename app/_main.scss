@@ -1,0 +1,220 @@
+#main-input {
+  display: block;
+  margin: 20px auto 0;
+  width: 70%;
+  font-size: $font-size-xxl;
+  border-width: 0 0 4px 0;
+  color: $color-light;
+  border-color: $color-light;
+  background-color: $color-primary;
+  outline: none;
+  text-align: center;
+
+  &:focus {
+    color: $color-accent;
+    border-color: $color-accent;
+  }
+
+  @media(max-width: $screen-lg) {
+    font-size: $font-size-xxl;
+  }
+
+  @media(max-width: $screen-md) {
+    font-size: $font-size-xl;
+  }
+
+  @media(max-width: $screen-sm) {
+    width: 90%;
+    font-size: $font-size-l;
+  }
+
+  @media(max-width: $screen-xs) {
+    width: 96%;
+    font-size: $font-size-m;
+  }
+}
+
+#submit-button {
+  display: block;
+  margin: 5% auto 0;
+  border: 2px solid $color-light;
+  border-radius: $border-radius;
+  font-size: $font-size-xl;
+  color: $color-light;
+  background-color: $color-primary;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $color-accent;
+    color: $color-accent;
+  }
+
+  .text {
+
+    @media(max-width: $screen-md) {
+      font-size: $font-size-l;
+    }
+
+    @media(max-width: $screen-xs) {
+      display: none;
+    }
+  }
+
+  .icon:before {
+    @include icon();
+    content: "c";
+
+    @media(max-width: $screen-lg) {
+      font-size: $font-size-xl;
+    }
+
+    @media(max-width: $screen-md) {
+      font-size: $font-size-l;
+    }
+
+    @media(max-width: $screen-sm) {
+      font-size: $font-size-m;
+    }
+
+    @media(max-width: $screen-xs) {
+      display: block;
+      font-size: $font-size-xl;
+    }
+  }
+}
+
+#message {
+  padding: 20px 5%;
+  font-size: $font-size-xl;
+  text-align: center;
+
+  @media(max-width: $screen-lg) {
+    font-size: $font-size-l;
+  }
+
+  @media(max-width: $screen-md) {
+    font-size: $font-size-m;
+  }
+
+  @media(max-width: $screen-sm) {
+    font-size: $font-size-s;
+  }
+
+  @media(max-width: $screen-xs) {
+    font-size: $font-size-xs;
+  }
+
+  .icon {
+    @include icon();
+
+    @media(max-width: $screen-lg) {
+      font-size: $font-size-xxl;
+    }
+
+    @media(max-width: $screen-md) {
+      font-size: $font-size-xxl;
+    }
+
+    @media(max-width: $screen-sm) {
+      font-size: $font-size-xl;
+    }
+
+    @media(max-width: $screen-xs) {
+      font-size: $font-size-l;
+    }
+  }
+
+  .not-found {
+    color: $color-warning;
+  }
+
+  .not-found-icon:before {
+    content: "b";
+  }
+
+  .high-score {
+    color: $color-ok;
+  }
+
+  .high-score-icon:before {
+    content: "a";
+  }
+}
+
+#high-scores-header {
+  text-align: center;
+  margin-top: 40px;
+  cursor: pointer;
+
+  @media(max-width: $screen-lg) {
+    font-size: $font-size-xxl;
+  }
+
+  @media(max-width: $screen-md) {
+    font-size: $font-size-xl;
+  }
+
+  @media(max-width: $screen-sm) {
+    font-size: $font-size-l;
+  }
+
+  &:hover {
+    color: $color-accent;
+  }
+
+  .icon:before {
+    @include icon();
+    content: "a";
+
+    @media(max-width: $screen-xs) {
+      font-size: $font-size-xl;
+    }
+  }
+
+  .text {
+    @media(max-width: $screen-xs) {
+      display: none;
+    }
+  }
+}
+
+#high-scores {
+  display: table;
+  margin: 10px auto 40px auto;
+  width: 60%;
+
+  @media(max-width: $screen-lg) {
+    font-size: $font-size-xl;
+  }
+
+  @media(max-width: $screen-md) {
+    font-size: $font-size-l;
+  }
+
+  @media(max-width: $screen-sm) {
+    width: 70%;
+    font-size: $font-size-m;
+  }
+
+  @media(max-width: $screen-xs) {
+    width: 80%;
+    font-size: $font-size-s;
+  }
+
+  .row {
+    display: table-row;
+  }
+
+  .cell {
+    display: table-cell;
+  }
+
+  .header {
+    border-bottom: 2px solid $color-light;
+  }
+
+  .score {
+    text-align: right;
+  }
+}

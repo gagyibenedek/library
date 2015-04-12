@@ -1,0 +1,13 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+@import '../_main.scss';
+
+body {
+  background-color: $color-primary;
+  margin: 0;
+  font-family: $font-family;
+  color: $color-light;
+}
+
+@include iconFont();

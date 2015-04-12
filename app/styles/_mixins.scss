@@ -1,0 +1,16 @@
+@mixin iconFont() {
+  @font-face {
+    font-family: 'icon';
+    src: url('../assets/icons/icomoon.eot');
+    src: url('../assets/icons/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('../assets/icons/icomoon.woff') format('woff'),
+    url('../assets/icons/icomoon.ttf') format('truetype'),
+    url('../assets/icons/icomoon.svg#icomoon') format('svg');
+  }
+}
+
+@mixin icon(){
+  font-family: 'icon';
+  speak: none;
+  font-style: normal;
+}
